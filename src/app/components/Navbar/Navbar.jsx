@@ -3,12 +3,12 @@ import React from 'react'
 export const Navbar = () => {
   return (
     <>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">
-          <img src="../../assets/img/logo.png" />
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ 'background': 'black' }}>
+        <a className="navbar-brand" href="#/">
+          <img src={process.env.PUBLIC_URL + '/img/logo.png'} alt='Logo' />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarsExampleDefault"
@@ -16,19 +16,19 @@ export const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav mr-auto"></ul>
-          <form class="form-inline my-2 my-lg-0">
+        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul className="navbar-nav mr-auto"></ul>
+          <form className="form-inline my-2 my-lg-0">
             <input
-              class="form-control mr-sm-2"
+              className="form-control mr-sm-2"
               type="text"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+            <button className="btn btn-secondary my-2 my-sm-0" type="submit">
               Search
             </button>
           </form>

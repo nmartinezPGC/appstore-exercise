@@ -1,5 +1,5 @@
-import "./App.css";
 import { Navbar } from "./app/components/Navbar/Navbar";
+import { ApplicationScreen } from "./app/pages/application/ApplicationScreen";
 
 function App() {
   return (
@@ -8,10 +8,11 @@ function App() {
       <Navbar />
 
       {/* Main component */}
-      <main role="main" class="container">
-        <div class="starter-template">
-          <img src="img/meme.jpg" alt="" srcset="" />
-          <p class="lead">Éxitos</p>
+      <main role="main" className="container-fluid">
+        <div className="pricing-header px-5 py-3 pt-md-2 pb-md-4 mx-auto text-center">
+          {/* Applications table list */}
+          <ApplicationScreen />
+          <hr />
         </div>
       </main>
     </>
